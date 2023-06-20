@@ -17,7 +17,7 @@
  */
 
 var nodeunit = require('nodeunit');
-var gf = require('../src/galois.js');
+var gf = import('../src/galois.js');
 
 exports.single_multiply = function(test) {
   test.strictEqual(typeof gf.single_multiply, 'function');
