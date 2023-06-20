@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var galoisjs = require('bindings')('galoisjs.node');
+var galoisjs = import('bindings')('galoisjs.node');
 
 galoisjs.add = galoisjs.subtract = function(a, b, w) {
   return a ^ b;
